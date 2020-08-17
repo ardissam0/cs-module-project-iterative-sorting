@@ -12,7 +12,7 @@ def selection_sort(arr):
 
         # TO-DO: swap
         # Your code here
-        arr[i], arr[curr_index] = arr[curr_index], arr[i]
+        arr[i], arr[cur_index] = arr[cur_index], arr[i]
     return arr
 
 
@@ -22,8 +22,8 @@ def bubble_sort(arr):
     for i in range(0, len(arr) - 1):
 
         for x in range(0, len(arr) - i - 1):
-        if arr[x] > arr[x + 1]:
-            arr[x], arr[x + 1] = arr[x + 1], arr[x]
+            if arr[x] > arr[x + 1]:
+                arr[x], arr[x + 1] = arr[x + 1], arr[x]
 
     return arr
 
